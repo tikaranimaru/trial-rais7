@@ -1,0 +1,62 @@
+current directory: /Users/r.yamaguchi/Work/projects/trial-rais7/vendor/bundle/ruby/2.7.0/gems/puma-5.5.2/ext/puma_http11
+/Users/r.yamaguchi/.rbenv/versions/2.7.2/bin/ruby -I /Users/r.yamaguchi/.rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20211229-25271-13ns74v.rb extconf.rb --with-cflags\=-Wno-error\=implicit-function-declaration
+using OpenSSL pkgconfig (openssl.pc)
+checking for openssl/bio.h... yes
+checking for DTLS_method() in openssl/ssl.h... yes
+checking for TLS_server_method() in openssl/ssl.h... yes
+checking for SSL_CTX_set_min_proto_version(NULL, 0) in openssl/ssl.h... yes
+checking for X509_STORE_up_ref()... yes
+checking for SSL_CTX_set_ecdh_auto(NULL, 0) in openssl/ssl.h... yes
+checking for Random.bytes... yes
+creating Makefile
+
+current directory: /Users/r.yamaguchi/Work/projects/trial-rais7/vendor/bundle/ruby/2.7.0/gems/puma-5.5.2/ext/puma_http11
+make "DESTDIR=" clean
+
+current directory: /Users/r.yamaguchi/Work/projects/trial-rais7/vendor/bundle/ruby/2.7.0/gems/puma-5.5.2/ext/puma_http11
+make "DESTDIR="
+compiling http11_parser.c
+compiling mini_ssl.c
+mini_ssl.c:98:8: warning: 'DH_new' is deprecated [-Wdeprecated-declarations]
+  dh = DH_new();
+       ^
+/usr/local/Cellar/openssl@3/3.0.1/include/openssl/dh.h:199:1: note: 'DH_new' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 DH *DH_new(void);
+^
+/usr/local/Cellar/openssl@3/3.0.1/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/local/Cellar/openssl@3/3.0.1/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+mini_ssl.c:112:34: warning: 'DH_set0_pqg' is deprecated [-Wdeprecated-declarations]
+  if (p == NULL || g == NULL || !DH_set0_pqg(dh, p, NULL, g)) {
+                                 ^
+/usr/local/Cellar/openssl@3/3.0.1/include/openssl/dh.h:255:1: note: 'DH_set0_pqg' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 int DH_set0_pqg(DH *dh, BIGNUM *p, BIGNUM *q, BIGNUM *g);
+^
+/usr/local/Cellar/openssl@3/3.0.1/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/local/Cellar/openssl@3/3.0.1/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+mini_ssl.c:113:5: warning: 'DH_free' is deprecated [-Wdeprecated-declarations]
+    DH_free(dh);
+    ^
+/usr/local/Cellar/openssl@3/3.0.1/include/openssl/dh.h:200:1: note: 'DH_free' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 void DH_free(DH *dh);
+^
+/usr/local/Cellar/openssl@3/3.0.1/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/local/Cellar/openssl@3/3.0.1/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+3 warnings generated.
+compiling puma_http11.c
+linking shared-object puma/puma_http11.bundle
+
+current directory: /Users/r.yamaguchi/Work/projects/trial-rais7/vendor/bundle/ruby/2.7.0/gems/puma-5.5.2/ext/puma_http11
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20211229-25271-wi9e2u/puma
