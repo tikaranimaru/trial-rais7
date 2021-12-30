@@ -382,6 +382,20 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="cssbundling-rails (vbundled(1.0.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/cssbundling-rails-1.0.0/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/cssbundling-rails-1.0.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="debug (vbundled(1.4.0)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
