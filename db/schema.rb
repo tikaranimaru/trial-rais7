@@ -10,6 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2022_01_05_005831) do
 
+  create_table "foods", charset: "utf8mb4", force: :cascade do |t|
+    t.string "name"
+    t.bigint "kind_id", null: false
+    t.integer "price"
+    t.text "memo"
+    t.boolean "is_deleted"
+    t.datetime "deleted_at", precision: 6
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["kind_id"], name: "index_foods_on_kind_id"
+  end
+
+  create_table "kinds", charset: "utf8mb4", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "foods", "kinds"
 end

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  kind: one
+  price: 1
+  memo: MyText
+  is_deleted: false
+  deleted_at: 2022-01-05 09:58:31
+
+two:
+  name: MyString
+  kind: two
+  price: 1
+  memo: MyText
+  is_deleted: false
+  deleted_at: 2022-01-05 09:58:31
