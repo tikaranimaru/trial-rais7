@@ -1,7 +1,7 @@
 # Rails7を試してみる
+[Ruby on Rails 7.0 Release Notes](https://edgeguides.rubyonrails.org/7_0_release_notes.html)
 
-https://edgeguides.rubyonrails.org/7_0_release_notes.html
-
+![ezgif-7-d2cbdc56e5](https://user-images.githubusercontent.com/17329726/148153140-b57b5870-6a63-45fc-9a46-1beb125f6b9b.gif)
 
 ## Rail7をインストール
 ```bash
@@ -125,8 +125,8 @@ $ foreman start -f Procfile.dev
 
 ```
 ## 参考
-https://edgeguides.rubyonrails.org/getting_started.html
+[Getting Started with Rails](https://edgeguides.rubyonrails.org/getting_started.html)
 
-https://rajeevkannav.com/post/2021-03-19-install-rails7-alpha-edge/
+[nstall Rails 7 Edge Alpha](https://rajeevkannav.com/post/2021-03-19-install-rails7-alpha-edge/)
 
-https://qiita.com/suketa/items/837eb97bdb48dd8c4688
+[Rails 7 をちょこっと試す（さらば、Webpacker 編）](https://qiita.com/suketa/items/837eb97bdb48dd8c4688)
