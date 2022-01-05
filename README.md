@@ -1,5 +1,5 @@
-Rails7を試してみる
---
+# Rails7を試してみる
+
 https://edgeguides.rubyonrails.org/7_0_release_notes.html
 
 
