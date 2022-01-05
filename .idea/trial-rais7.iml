@@ -382,20 +382,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="cssbundling-rails (vbundled(1.0.0)) [path][gem]" type="rubylib">
-        <properties>
-          <option name="version" value="4" />
-        </properties>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/cssbundling-rails-1.0.0/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/cssbundling-rails-1.0.0/lib" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="debug (vbundled(1.4.0)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -485,21 +471,21 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="io-console (vbundled(0.5.9)) [path][gem]" type="rubylib">
+      <library name="io-console (vbundled(0.5.11)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
         </properties>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/io-console-0.5.9/ext" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/io-console-0.5.9/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/io-console-0.5.11/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/io-console-0.5.11/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/io-console-0.5.9/ext" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/io-console-0.5.9/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/io-console-0.5.11/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/io-console-0.5.11/lib" />
         </SOURCES>
         <excluded>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/io-console-0.5.9/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/io-console-0.5.11/ext" />
         </excluded>
       </library>
     </orderEntry>
@@ -1016,6 +1002,20 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="redis (vbundled(4.5.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/redis-4.5.1/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/redis-4.5.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="regexp_parser (vbundled(2.2.0)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -1035,16 +1035,16 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="reline (vbundled(0.3.0)) [path][gem]" type="rubylib">
+      <library name="reline (vbundled(0.3.1)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
         </properties>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/reline-0.3.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/reline-0.3.1/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/reline-0.3.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/reline-0.3.1/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -1150,21 +1150,42 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="thor (vbundled(1.1.0)) [path][gem]" type="rubylib">
+      <library name="tailwindcss-rails (vbundled(2.0.3)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
         </properties>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/thor-1.1.0/bin" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/thor-1.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/tailwindcss-rails-2.0.3-x86_64-darwin/app" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/tailwindcss-rails-2.0.3-x86_64-darwin/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/tailwindcss-rails-2.0.3-x86_64-darwin/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/thor-1.1.0/bin" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/thor-1.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/tailwindcss-rails-2.0.3-x86_64-darwin/app" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/tailwindcss-rails-2.0.3-x86_64-darwin/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/tailwindcss-rails-2.0.3-x86_64-darwin/lib" />
         </SOURCES>
         <excluded>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/thor-1.1.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/tailwindcss-rails-2.0.3-x86_64-darwin/exe" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="thor (vbundled(1.2.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/thor-1.2.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/thor-1.2.1/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/thor-1.2.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/thor-1.2.1/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/thor-1.2.1/bin" />
         </excluded>
       </library>
     </orderEntry>
@@ -1289,16 +1310,16 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="zeitwerk (vbundled(2.5.2)) [path][gem]" type="rubylib">
+      <library name="zeitwerk (vbundled(2.5.3)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
         </properties>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/zeitwerk-2.5.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/zeitwerk-2.5.3/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/zeitwerk-2.5.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.7.0/gems/zeitwerk-2.5.3/lib" />
         </SOURCES>
       </library>
     </orderEntry>
