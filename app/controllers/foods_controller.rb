@@ -1,14 +1,10 @@
 class FoodsController < ApplicationController
-  before_action :set_food, only: %i[ show edit update destroy ]
+  before_action :set_food, only: %i[ edit update destroy ]
 
   # GET /foods or /foods.json
   def index
     @q = Food.ransack(params[:q])
-    @foods = @q.result.page(params[:page]).per(5)
-  end
-
-  # GET /foods/1 or /foods/1.json
-  def show
+    @foods = @q.result.includes(:kind).page(params[:page]).per(params[:per] || 6)
   end
 
   # GET /foods/new
