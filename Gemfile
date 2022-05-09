@@ -73,3 +73,8 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'haml-rails'
+gem "ransack"
+gem "kaminari"
+

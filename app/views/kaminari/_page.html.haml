@@ -1,0 +1,5 @@
+- if page.current?
+  = content_tag :a, page, rel: page.rel, class: 'btn', data: { turbo_frame: 'ransack_search' }
+- else
+  = link_to page, url, rel: page.rel, class: 'btn btn-outline', data: { turbo_frame: 'ransack_search' }
+
