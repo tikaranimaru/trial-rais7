@@ -9,6 +9,7 @@
       <%= link_to '+ New food', new_food_path, class: "btn btn-outline btn-primary" %>
     </div>
 
+    <%# =========================== 検索フォーム =========================== %>
     <%= search_form_for @q, url: foods_path do |f| %>
       <div class="grid grid-cols-6 gap-3">
         <div class="col-span-2">
@@ -19,6 +20,8 @@
         </div>
       </div>
     <% end %>
+
+    <%# =========================== 検索結果/一覧 =========================== %>
     <%= turbo_frame_tag :foods do %>
       <div id="foods" class="min-w-full">
         <div class="grid grid-cols-12 gap-4">
@@ -26,6 +29,8 @@
         </div>
       </div>
     <% end %>
+
+    <%# =========================== ページネーション=========================== %>
     <%= paginate @foods %>
   </div>
 <% end %>
