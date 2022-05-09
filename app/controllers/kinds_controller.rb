@@ -26,10 +26,8 @@ class KindsController < ApplicationController
     respond_to do |format|
       if @kind.save
         format.html { redirect_to kind_url(@kind), notice: "Kind was successfully created." }
-        format.json { render :show, status: :created, location: @kind }
       else
         format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @kind.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -39,10 +37,8 @@ class KindsController < ApplicationController
     respond_to do |format|
       if @kind.update(kind_params)
         format.html { redirect_to kind_url(@kind), notice: "Kind was successfully updated." }
-        format.json { render :show, status: :ok, location: @kind }
       else
         format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @kind.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -53,7 +49,6 @@ class KindsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to kinds_url, notice: "Kind was successfully destroyed." }
-      format.json { head :no_content }
     end
   end
 
