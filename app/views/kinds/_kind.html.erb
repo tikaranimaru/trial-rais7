@@ -1,8 +1,15 @@
 <div id="<%= dom_id kind %>">
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Name:</strong>
+  <p class="mb-2">
+    <strong class="block font-medium mb-1">Kind Name:</strong>
     <%= kind.name %>
   </p>
+
+  <% if action_name == "show" %>
+    <p class="mb-2">
+      <strong class="block font-medium mb-1">Created at:</strong>
+      <%= kind.created_at %>
+    </p>
+  <% end %>
 
   <% if action_name != "show" %>
     <%= link_to "Show this kind", kind, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>

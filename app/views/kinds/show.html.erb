@@ -1,15 +1,27 @@
-<div class="mx-auto md:w-2/3 w-full flex">
-  <div class="mx-auto">
-    <% if notice.present? %>
-      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
-    <% end %>
+<div class="grid grid-cols-2">
+  <div class="col-span-1">
+    <div class="mx-auto">
+      <% if notice.present? %>
+        <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+      <% end %>
 
-    <%= render @kind %>
+      <%= render @kind %>
 
-    <%= link_to 'Edit this kind', edit_kind_path(@kind), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <div class="inline-block ml-2">
-      <%= button_to 'Destroy this kind', kind_path(@kind), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+      <%= link_to 'Edit this kind', edit_kind_path(@kind), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+      <div class="inline-block ml-2">
+        <%= button_to 'Destroy this kind', kind_path(@kind), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+      </div>
+      <%= link_to 'Back to kinds', kinds_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
     </div>
-    <%= link_to 'Back to kinds', kinds_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+  </div>
+  <div class="col-span-1">
+    <div class="mb-2">
+      <h1 class="font-bold mb-2"> <%= "#{@kind.name}の一覧" %> </h1>
+      <hr/>
+    </div>
+    <%= turbo_frame_tag :foods, src: foods_path(q: { kind_id_eq: @kind.id }, per: 100), loading: "lazy" do %>
+      ...loading
+    <% end %>
   </div>
 </div>
+
